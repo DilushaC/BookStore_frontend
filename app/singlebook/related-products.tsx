@@ -1,5 +1,5 @@
 import React from 'react';
-import ItemCard from '../item-card';
+import ItemCard from '../components/item-card';
 
 interface ItemPropsType {
     title: string;
@@ -39,17 +39,17 @@ const items: ItemPropsType[] = [
         rating: 5,
     },
     {
-        title: 'All The Light We Cannot See',
-        author: 'By Anthony Doerr',
-        price: '24.99',
+        title: 'Rich People Problems',
+        author: 'By Kevin Kwan',
+        price: '18.50',
         image: 'https://apps.npr.org/best-books/assets/synced/covers/2023/0593378016.jpg',
         rating: 4,
-    }
+    },
 ];
 
-const ItemGrid: React.FC = () => {
+const RelatedProducts: React.FC = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+        <div className="flex gap-6">
             {items.map((book, index) => (
                 <ItemCard
                     key={index}
@@ -58,10 +58,11 @@ const ItemGrid: React.FC = () => {
                     price={book.price}
                     image={book.image}
                     rating={book.rating}
+                    flexList={true}
                 />
             ))}
         </div>
     );
 };
 
-export default ItemGrid;
+export default RelatedProducts;

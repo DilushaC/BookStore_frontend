@@ -8,13 +8,14 @@ interface ItemCardProps {
     price: string;
     image: string;
     rating: number;
+    flexList?: boolean;
 }
 
-const ItemCard: React.FC<ItemCardProps> = ({ title, author, price, image, rating }) => {
+const ItemCard: React.FC<ItemCardProps> = ({ title, author, price, image, rating, flexList }) => {
     return (
         <Card shadow="sm" padding="lg" radius="md" withBorder className="relative">
             <Card.Section>
-                <Image src={image} alt={title} height={160} className='object-contain h-70 w-96' />
+                <Image src={image} alt={title} height={160} className={flexList ? 'object-fill h-21 w-15' : 'object-contain h-70 w-96'} />
             </Card.Section>
 
             <Group position="apart" className="mt-2">
