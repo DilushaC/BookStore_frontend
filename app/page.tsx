@@ -1,6 +1,7 @@
 "use client";
 import Link from 'next/link';
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import { Button } from '@mantine/core';
 
 export default function Demo() {
@@ -10,6 +11,7 @@ export default function Demo() {
       <Button component={Link} href="/hello">
         Next link button
       </Button>
+      <Footer />
     </div>
 
   );
