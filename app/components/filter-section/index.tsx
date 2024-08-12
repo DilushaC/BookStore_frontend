@@ -17,7 +17,7 @@ const ratings = [5, 4, 3, 2];
 const Filter: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string[]>(['Graphic Novels & Comics']);
   const [selectedRating, setSelectedRating] = useState<number[]>([5, 4]);
-  const [priceRange, setPriceRange] = useState<[number, number]>([0, 1500]);
+  const [priceRange, setPriceRange] = useState<number>(1500);
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategory((prev) =>

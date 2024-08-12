@@ -17,13 +17,19 @@ const BookTabs: React.FC = () => {
                 </p>
             </Tabs.Panel>
             <Tabs.Panel value="additionalInfo" pt="xs">
-                {/* Additional Info Content */}
+            <p className="text-gray-700">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius nisl sed sit aliquet nullam pretium. Velit vel aliquam amet augue...
+                </p>
             </Tabs.Panel>
             <Tabs.Panel value="reviews" pt="xs">
-                {/* Reviews Content */}
+            <p className="text-gray-700">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius nisl sed sit aliquet nullam pretium. Velit vel aliquam amet augue...
+                </p>
             </Tabs.Panel>
             <Tabs.Panel value="video" pt="xs">
-                {/* Video Content */}
+            <p className="text-gray-700">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius nisl sed sit aliquet nullam pretium. Velit vel aliquam amet augue...
+                </p>
             </Tabs.Panel>
         </Tabs>
     );

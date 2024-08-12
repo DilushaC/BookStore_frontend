@@ -73,13 +73,14 @@ const CheckoutForm: React.FC = () => {
                             </div>
                         </div>
 
-                        <Group position="center" mt="lg">
+                        <Group mt="lg">
                             <Button type="submit" color="green" size="lg">
                                 Pay $59.28
                             </Button>
                         </Group>
                     </form>
                 </div>
+                
                 <div className="w-3/12 bg-gray-100 p-4 px-8 rounded mt-6">
                     <h2 className="text-xl font-semibold mb-5">Order Summary</h2>
                     <ul className="mb-4">

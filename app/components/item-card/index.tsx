@@ -18,8 +18,8 @@ const ItemCard: React.FC<ItemCardProps> = ({ title, author, price, image, rating
                 <Image src={image} alt={title} height={160} className={flexList ? 'object-fill h-21 w-15' : 'object-contain h-70 w-96'} />
             </Card.Section>
 
-            <Group position="apart" className="mt-2">
-                <Text weight={500}>{title}</Text>
+            <Group className="mt-2">
+                <Text>{title}</Text>
                 <Badge color="green">${price}</Badge>
             </Group>
 
@@ -27,7 +27,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ title, author, price, image, rating
                 By {author}
             </Text>
 
-            <Group spacing="xs" className="mt-3">
+            <Group className="mt-3">
                 {[...Array(5)].map((_, index) => (
                     <span
                         key={index}
@@ -38,7 +38,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ title, author, price, image, rating
                 ))}
             </Group>
 
-            <Group position="right" spacing="xs" className="absolute top-2 right-2">
+            <Group className="absolute top-2 right-2">
                 <Button variant="light" color="gray" size="xs">
                     <IconEye size={16} />
                 </Button>
