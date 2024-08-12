@@ -20,14 +20,13 @@ const ItemCard: React.FC<ItemCardProps> = ({ title, author, price, image, rating
 
             <Group className="mt-2">
                 <Text>{title}</Text>
-                <Badge color="green">${price}</Badge>
             </Group>
 
             <Text size="sm" color="dimmed">
                 By {author}
             </Text>
-
-            <Group className="mt-3">
+            <Text className="font-bold text-lg mt-2" color="green">${price}</Text>
+            <Group className="mt-1">
                 {[...Array(5)].map((_, index) => (
                     <span
                         key={index}
